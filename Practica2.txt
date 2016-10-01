@@ -12,6 +12,27 @@ public class Zodiaco {
 	 */
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+		
+		String nombre,apellido,fechaNacimiento;
+		int edad,noControl;
+		Scanner sc = new Scanner (System.in);
+		
+		
+		System.out.println("Cual es tu nombre? ");
+		nombre= sc.next();
+		
+		System.out.println("Cual es tu apellido? ");
+		apellido= sc.next();
+		
+		System.out.println("Dame tu edad ");
+		edad= sc.nextInt();
+		
+		System.out.println("Dame tu numero de control ");
+		noControl= sc.nextInt();
+                
+                System.out.println("Dame tu fecha de nacimiento \ndd-mm-aaaa");
+		fechaNacimiento= sc.next();
+                
 
- }
+}
 }
