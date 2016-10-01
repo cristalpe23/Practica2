@@ -34,6 +34,7 @@ public class Zodiaco {
 		fechaNacimiento= sc.next();
                 
                 Date date = deStringADate(fechaNacimiento);
+                int mes = obtenerMes(date);
 		
 	}
         
@@ -51,6 +52,22 @@ public class Zodiaco {
                 
                 ex.printStackTrace();
                 return null;
+            }
+        }
+        
+        public static int obtenerMes(Date date){
+            
+            if (null == date){
+                
+                return 0;
+                        
+            }
+            else{
+                
+                String formato = "MM";
+                SimpleDateFormat dateFormat = new SimpleDateFormat(formato);
+                return Integer.parseInt(dateFormat.format(date));
+                
             }
         }
 
