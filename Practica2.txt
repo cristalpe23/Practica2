@@ -37,6 +37,9 @@ public class Zodiaco {
                 int mes = obtenerMes(date);
                 int dia= obtenerDia(date);
                 String signo=zodiaco(mes,dia);
+                
+                System.out.println("\n" + nombre +" "+ apellido + " edad: "+ edad+" matricula: " + noControl);
+                System.out.println("Tu signo zodiacal es: " + signo );
 		
 	}
         
